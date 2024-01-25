@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+
+    <style>
+        /* * {
+            background-color: black;
+        } */
+
+        #main-box {
+            border: 6px solid rgb(169, 169, 169);
+            border-radius: 15px;
+            height: 140vh;
+            padding: 20px;
+            justify-content: center;
+            text-align: center;
+            color: burlywood;
+            background-color: black;
+        }
+
+        #hrs12, #hrs24, #dmy {
+            border: 3px solid rgb(169, 169, 169);
+            border-radius: 15px;
+            height: 25vh;
+            width: 146vh;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            gap: 80px;
+            color: black;
+            position: relative;
+            left: 170px;
+        }
+
+        .box {
+            border-radius: 15px;
+            height: 140px;
+            width: 140px;
+            background-color:rgb(169, 169, 169);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="main-box">
+        <h1>24-Hour</h1>
+        <div id="hrs24">
+            <section class="box" id="hour-24">
+                <h3>Hour</h3>
+                <h2 id="hour"></h2>
+            </section>
+            <section class="box" id="minute-24">
+                <h3>Minutes</h3>
+                <h2 id="min"></h2>
+            </section>
+            <section class="box" id="second-24">
+                <h3>Second</h3>
+                <h2 id="sec"></h2>
+            </section>
+            <section class="box" id="am-pm-24">
+                <h3>Session</h3>
+                <h2 id="sea"></h2>
+            </section>
+        </div>
+        <br>
+        <h1>12-Hour</h1>
+        <div id="hrs12">
+            <section class="box" id="hour-12">
+                <h3>Hour</h3>
+                <h2 id="hour12"></h2>
+            </section>
+            <section class="box" id="minute-12">
+                <h3>Minutes</h3>
+                <h2 id="min12"></h2>
+            </section>
+            <section class="box" id="second-12">
+                <h3>Second</h3>
+                <h2 id="sec12"></h2>
+            </section>
+            <section class="box" id="am-pm-12">
+                <h3>Session</h3>
+                <h2 id="sea12"></h2>
+            </section>
+        </div>
+        <br>
+        <h1>Date Info</h1>
+        <div id="dmy">
+            <section class="box" id="date-info">
+                <h3>Date</h3>
+                <h2 id="date"></h2>
+            </section>
+            <section class="box" id="day-info">
+                <h3>Day</h3>
+                <h2 id="day"></h2>
+            </section>
+            <section class="box" id="month-info">
+                <h3>Month</h3>
+                <h2 id="month"></h2>
+            </section>
+            <section class="box" id="year-info">
+                <h3>Year</h3>
+                <h2 id="year"></h2>
+            </section>
+        </div>
+    </div>
+
+    <script src="../JAVASCRIPT/demo.js"></script>
+</body>
+</html>

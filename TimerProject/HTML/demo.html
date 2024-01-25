@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: black;
+            color: rgb(191, 159, 119);
+            font-family: 'Arial', sans-serif;
+        }
+
+        #clock-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 80%;
+            margin-top: 20px;
+        }
+
+        .info-box {
+            text-align: center;
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid rgb(113, 112, 112);
+            border-radius: 5px;
+            min-width: 100px;
+        }
+        h1{
+            color: rgb(217, 92, 251);
+        }
+        h2{
+            color: rgb(113, 112, 112);
+        }
+        p{
+
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="clock-container">
+        <div class="info-box">
+            <h1><i>24-Hour Time : </i></h1>
+            <div>
+                <h2>Hour</h2>
+                <p id="hour"></p>
+            </div>
+            <div>
+                <h2>Minutes</h2>
+                <p id="min"></p>
+            </div>
+            <div>
+                <h2>Seconds</h2>
+                <p id="sec"></p>
+            </div>
+            <div>
+                <h2>Season</h2>
+                <p id="sea"></p>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <h1><i>12-Hour Time : </i></h1>
+            <div>
+                <h2>Hour</h2>
+                <p id="hour12"></p>
+            </div>
+            <div>
+                <h2>Minutes</h2>
+                <p id="min12"></p>
+            </div>
+            <div>
+                <h2>Seconds</h2>
+                <p id="sec12"></p>
+            </div>
+            <div>
+                <h2>Season</h2>
+                <p id="sea12"></p>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <h1><i>Date Info : </i></h1>
+            <div>
+                <h2>Date</h2>
+                <p id="date"></p>
+            </div>
+            <div>
+                <h2>Day</h2>
+                <p id="day"></p>
+            </div>
+            <div>
+                <h2>Month</h2>
+                <p id="month"></p>
+            </div>
+            <div>
+                <h2>Year</h2>
+                <p id="year"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../JAVASCRIPT/demo.js"></script>
+</body>
+</html>
